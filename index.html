@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfaf8">
+  <meta name="description" content="Chess 2.0 for iPhone. A familiar game with a fresh perspective. Play a friend, take on the bot, and revisit every move.">
+  <meta property="og:title" content="Chess 2.0 — Your next move.">
+  <meta property="og:description" content="A familiar game. A fresh perspective. Meet Chess 2.0 for iPhone.">
+  <meta property="og:type" content="website">
+  <title>Chess 2.0 — Your next move.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="navigation wrap">
+    <a class="wordmark" href="./" aria-label="Chess 2.0 home"><span class="brand-icon" aria-hidden="true">♞</span> chess<span class="brand-dot">.</span><span class="brand-version">2.0</span></a>
+    <nav aria-label="Main navigation"><a href="#the-game">The game</a><a href="#preview">Take a look <span aria-hidden="true">↗</span></a></nav>
+    <a class="nav-button" href="#availability">For iPhone <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="little-square" aria-hidden="true"></span> AN OLD GAME. A NEW PERSPECTIVE.</p>
+        <h1>Your next<br><em>move.</em></h1>
+        <p class="intro">A little focus. A friendly rivalry.<br>Sixty-four squares of possibility.</p>
+        <a class="button dark" href="#preview">Meet your new chess board <span aria-hidden="true">↗</span></a>
+        <p class="availability"><span class="status-dot" aria-hidden="true"></span> Made for iPhone. Currently in development.</p>
+      </div>
+      <div class="hero-art" aria-label="Illustrated iPhone preview with the app’s pink and cream chessboard">
+        <div class="art-ring" aria-hidden="true"></div>
+        <span class="art-caption caption-top">THE CLASSIC, WITH A LITTLE COLOUR.</span>
+        <div class="floating-tile knight-tile" aria-hidden="true"><img src="assets/wn.png" alt="" width="160" height="160"></div>
+        <div class="phone">
+          <div class="phone-status" aria-hidden="true"><span>9:41</span><span>● ▰</span></div>
+          <div class="phone-island" aria-hidden="true"></div>
+          <div class="phone-header"><span>‹</span><span>LET’S PLAY</span><span>···</span></div>
+          <div class="phone-history">1. e4 <span>e5</span> &nbsp; 2. Nf3 <span>Nc6</span></div>
+          <div class="phone-clock">09:57 <span class="clock-dot"></span></div>
+          <div id="hero-board" class="board hero-board" aria-hidden="true"></div>
+          <div class="phone-clock white-clock">09:56 <span class="clock-dot"></span></div>
+          <div class="phone-turn"><span></span> White to move</div>
+          <div class="phone-controls" aria-hidden="true"><span>☰</span><div><span>←</span><span>→</span></div></div>
+          <div class="home-indicator" aria-hidden="true"></div>
+        </div>
+        <div class="floating-tile pawn-tile" aria-hidden="true"><img src="assets/bp.png" alt="" width="110" height="110"></div>
+        <span class="art-caption caption-bottom">A GOOD GAME STARTS HERE. ↗</span>
+      </div>
+    </section>
+    <div class="game-strip wrap"><span>A fresh take on a timeless game.</span><div><span>64 squares</span><span class="strip-plus">+</span><span>your next idea</span></div><span class="strip-note">MAKE YOUR MOVE ↗</span></div>
+    <section class="idea wrap" id="the-game">
+      <div class="section-heading"><p class="eyebrow">SAME GAME. YOUR WAY.</p><h2>A worthy opponent.<br><em>A lovely little board.</em></h2><p class="section-intro">Settle in, pick a side, and see where the game takes you. The essentials are right where you need them.</p></div>
+      <div class="steps">
+        <article><span class="step-number">01 /</span><div><h3>A friend. Or a fresh challenge.</h3><p>Share the board in player versus player, or take on the bot when you feel like a game on your own.</p></div></article>
+        <article><span class="step-number">02 /</span><div><h3>Make every second count.</h3><p>Ten minutes on each clock. Your timer runs on your turn, giving every move a little momentum.</p></div></article>
+        <article><span class="step-number">03 /</span><div><h3>Look back. Think ahead.</h3><p>Step through your past moves, revisit a position, and return to the current board when you’re ready.</p></div></article>
+      </div>
+    </section>
+    <section class="preview-section" id="preview">
+      <div class="preview-layout wrap">
+        <div class="preview-copy"><p class="eyebrow">A LITTLE LOOK AROUND</p><h2>Small moves.<br><em>Big possibilities.</em></h2><p>Every game starts with a blank slate. Walk through an opening and get a feel for the board.</p><span class="preview-tag"><span aria-hidden="true">↳</span> INTERACTIVE DESIGN PREVIEW</span>
+          <div class="opening-note"><span class="note-number" id="move-number">00</span><div><h3 id="move-title">A fresh start.</h3><p id="move-description">All the pieces are in place. White makes the first move.</p></div></div>
+          <p class="demo-explainer">This is a guided opening preview. Full games are played in the iPhone app.</p>
+        </div>
+        <div class="board-demo">
+          <div class="demo-header"><span class="demo-label">THE OPENING</span><span id="turn-label">White to move</span></div>
+          <div class="board-frame"><div class="rank-labels" aria-hidden="true"><span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span></div><div id="demo-board" class="board" role="img" aria-label="Chess board in its starting position"></div><div class="file-labels" aria-hidden="true"><span>a</span><span>b</span><span>c</span><span>d</span><span>e</span><span>f</span><span>g</span><span>h</span></div></div>
+          <div class="demo-controls"><button id="reset" class="reset" type="button">↺ <span>Start over</span></button><span id="move-progress" aria-live="polite" aria-atomic="true">Move 0 of 6</span><div class="arrow-controls"><button id="previous" type="button" aria-label="Previous move" disabled>←</button><button id="next" type="button" aria-label="Next move">→</button></div></div>
+          <noscript><p class="noscript-message">Enable JavaScript to see the board and step through the opening.</p></noscript>
+        </div>
+      </div>
+    </section>
+    <section class="details wrap" id="questions">
+      <div><p class="eyebrow">BEFORE YOUR FIRST MOVE</p><h2>A few<br><em>good answers.</em></h2></div>
+      <div class="questions">
+        <details><summary>Can I play with a friend?<span aria-hidden="true">+</span></summary><p>Yes. Player versus player lets you take turns on the same device. Pass the board between you and enjoy a game together.</p></details>
+        <details><summary>What if I’m playing on my own?<span aria-hidden="true">+</span></summary><p>Choose Play Bot for a solo game. You play White, and the bot plays Black.</p></details>
+        <details><summary>Can I revisit earlier moves?<span aria-hidden="true">+</span></summary><p>Use the back and forward controls to review earlier positions. Return to the latest position to keep playing. The live clock keeps running while you review.</p></details>
+        <details><summary>Is the app available to download?<span aria-hidden="true">+</span></summary><p>Chess 2.0 is currently in development. An App Store link will appear here when the app is available.</p></details>
+      </div>
+    </section>
+    <section class="closing wrap" id="availability"><span class="closing-piece" aria-hidden="true">♞</span><p class="eyebrow">FOR THE LOVE OF THE GAME</p><h2>Clear your mind.<br><em>Set up the board.</em></h2><p>Chess 2.0 for iPhone is taking shape.<br>Your next good game is on its way.</p><span class="coming-soon"><span class="status-dot" aria-hidden="true"></span> In development for iPhone</span><a href="#main" class="back-top">Back to the top <span aria-hidden="true">↑</span></a></section>
+  </main>
+  <footer class="footer wrap"><a class="wordmark" href="./">chess<span class="brand-dot">.</span><span class="brand-version">2.0</span></a><span>A little more play. A little more possibility.</span><a href="#questions">Questions</a><span class="footer-fine">Chess 2.0 · Made for iPhone</span></footer>
+</body>
+</html>
